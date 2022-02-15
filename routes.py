@@ -17,3 +17,7 @@ def update(game_id):
     player_json = request.json
     player_guess = player_json.get("guess")
     return make_response(jsonify(guess(player_guess, game_id)), 200)
+
+# TODO
+# - sanitize game_id
+# - JavaScript front-end
